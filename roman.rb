@@ -1,10 +1,8 @@
 require 'sinatra'
 
 get("/") do
-  arabic_string = params.fetch("roman")
-  arabic_number = arabic_string.to_i
-  roman=romnum(arabic_number)
-  "<form><input name='roman'/><button>submit</button></form>"+
+
+  "<form><input name="int"/><button>submit</button></form>"+
   "<h1>#{roman}</h1>"
 end
 
